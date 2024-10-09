@@ -1,0 +1,14 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+::placeholder {
+    font-family: "Montserrat", sans-serif;
+    font-size: 16px;
+}
+
+input:focus {
+    outline: none;
+}
