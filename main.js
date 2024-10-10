@@ -15,7 +15,10 @@ function renderListData() {
     listData.forEach((taskObject) => {
         const { name, date, isChecked } = taskObject;
         const html = `
-        <input type="checkbox" class="check-task js-check-task" ${isChecked}>
+                <label class="check-container">
+                <input type="checkbox" class="check-task js-check-task" ${isChecked}>
+                <span class="custom-check-task"></span>
+                </label>
                 <div class="name-task">${name}</div>
                 <div class="date-task">${date}</div>
                 <button class="delete-task-btn js-delete-task-btn"><i class="fa-solid fa-trash"></i></button>
